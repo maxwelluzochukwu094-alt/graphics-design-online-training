@@ -19,7 +19,7 @@
 <body class="bg-white text-slate-900">
 
 <!-- Navigation -->
-<div id="navigation" class="contents"><header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-md border-b border-white/10">
+<div id="navigation" class="contents"><header id="navigation" class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-md border-b border-white/10 font-montserrat">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
     .font-montserrat {
@@ -27,23 +27,25 @@
     }
   </style>
   
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-montserrat">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-20">
       
       <!-- Logo & Brand -->
       <div class="flex-shrink-0 flex items-center">
-        <a href="#" class="flex items-center gap-2">
+        <a href="index.html" class="flex items-center gap-2">
           <img class="h-9 sm:h-11 w-auto object-contain" src="https://d1yei2z3i6k35z.cloudfront.net/18358735/6a895a033b5b31.58785077_Untitleddesign6.svg" alt="Laptop Economy Logo">
         </a>
       </div>
 
       <!-- Desktop Navigation Links (Hidden on Mobile/Tablet < 1024px) -->
-      <nav class="hidden lg:flex space-x-8">
-        
-        
-        <a href="index.html" class="text-slate-300 hover:text-[#FC6201] transition-colors duration-200 text-sm font-medium tracking-wide lg:text-slate-300 lg:font-[''Inter',_sans-serif'] lg:text-[14px] lg:tracking-wide" target="_self">Curriculum</a>
-        <a href="#offer" class="text-slate-300 hover:text-[#FC6201] transition-colors duration-200 text-sm font-medium tracking-wide lg:text-slate-300 lg:font-[''Inter',_sans-serif'] lg:text-[14px] lg:tracking-wide" target="_self">What You Get</a>
-        <a href="#faq" class="text-slate-300 hover:text-[#FC6201] transition-colors duration-200 text-sm font-medium tracking-wide">FAQs</a>
+      <nav class="hidden lg:flex items-center space-x-5 xl:space-x-7">
+        <a href="index.html" class="text-slate-300 hover:text-[#FC6201] transition-colors duration-200 text-xs xl:text-sm font-medium tracking-wide">Home</a>
+        <a href="contact.html" class="text-slate-300 hover:text-[#FC6201] transition-colors duration-200 text-xs xl:text-sm font-medium tracking-wide">Contact Us</a>
+        <a href="privacy.html" class="text-slate-300 hover:text-[#FC6201] transition-colors duration-200 text-xs xl:text-sm font-medium tracking-wide">Privacy Policy</a>
+        <a href="terms.html" class="text-slate-300 hover:text-[#FC6201] transition-colors duration-200 text-xs xl:text-sm font-medium tracking-wide">Terms of Service</a>
+        <a href="#curriculum" class="text-slate-300 hover:text-[#FC6201] transition-colors duration-200 text-xs xl:text-sm font-medium tracking-wide">Curriculum</a>
+        <a href="index.html" class="text-slate-300 hover:text-[#FC6201] transition-colors duration-200 text-xs font-medium tracking-wide lg:text-slate-300 lg:font-[''Inter',_sans-serif'] lg:text-[12px] lg:tracking-wide" target="_self">What You Get</a>
+        <a href="#faq" class="text-slate-300 hover:text-[#FC6201] transition-colors duration-200 text-xs xl:text-sm font-medium tracking-wide">FAQs</a>
       </nav>
 
       <!-- Action Area: CTA Button + Hamburger Toggle (Locked to Single Row) -->
@@ -67,10 +69,12 @@
   <input type="checkbox" id="nav-toggle" class="hidden peer">
   
   <!-- Mobile Dropdown Menu (Overlays cleanly without shifting layout) -->
-  <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-slate-950/95 backdrop-blur-lg border-b border-white/10 font-montserrat transition-all duration-300">
+  <div class="hidden peer-checked:block lg:hidden absolute top-full left-0 w-full bg-slate-950/95 backdrop-blur-lg border-b border-white/10 transition-all duration-300">
     <div class="px-4 pt-3 pb-6 space-y-2 shadow-2xl">
-      <a href="#problem" class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">The Problem</a>
-      <a href="#solution" class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">The Solution</a>
+      <a href="index.html" class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Home</a>
+      <a href="contact.html" class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Contact Us</a>
+      <a href="privacy.html" class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Privacy Policy</a>
+      <a href="terms.html" class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Terms of Service</a>
       <a href="#curriculum" class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Curriculum</a>
       <a href="#offer" class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">What You Get</a>
       <a href="#faq" class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">FAQs</a>
